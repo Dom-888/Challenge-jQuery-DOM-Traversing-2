@@ -21,13 +21,20 @@ $(document).ready(function(){
         $('.container').fadeTo(1000, 1);
     });
 
-//turns panel background black on mouseenter
-$(".theButton").mouseenter(function(){
-	$(this).addClass("makeBlack");
-   });
+    //turns panel background black on mouseenter
+    // $(".theButton").mouseenter(function(){
+    //     $(this).addClass("makeBlack");
+    // });
 
- //returns to original colour on mouseout 
-$(".theButton").mouseout(function(){
-	$(this).removeClass("makeBlack");
-   });
+    // //returns to original colour on mouseout 
+    // $(".theButton").mouseout(function(){
+    //     $(this).removeClass("makeBlack");
+    // });
+
+
+    // Second Challenge
+    $('.theButton').click(function(){
+        var color = $(this).css('background-color');
+        $('.superButton').text(color);
+    });
 });
